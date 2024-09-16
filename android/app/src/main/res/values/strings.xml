@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">NewArchRN</string>
+    <string name="app_name">ComposeReactNativeApp</string>
+    <string name="welcome_text">This is Native Android Fragment</string>
 </resources>
