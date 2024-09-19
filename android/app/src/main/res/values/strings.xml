@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ComposeReactNativeApp</string>
     <string name="welcome_text">This is Native Android Fragment</string>
+    <string name="react_activity_action">Open React Native Activity</string>
 </resources>

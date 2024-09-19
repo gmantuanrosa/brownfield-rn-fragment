@@ -6,8 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.ui.Modifier
 import com.example.composereactnativeapp.ui.theme.ComposeReactNativeAppTheme
+import com.facebook.react.modules.core.DefaultHardwareBackBtnHandler
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), DefaultHardwareBackBtnHandler {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -21,5 +22,9 @@ class MainActivity : AppCompatActivity() {
                 )
             }
         }
+    }
+
+    override fun invokeDefaultOnBackPressed() {
+        super.onBackPressed()
     }
 }
