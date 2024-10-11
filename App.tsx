@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, TextInput } from 'react-native';
 
 type NativeProps = {
   view_id: string
@@ -10,6 +10,7 @@ function App({ view_id }: NativeProps): React.JSX.Element {
     <View style={styles.container}>
       <Text style={styles.text}>This is React Native on an Android Fragment.</Text>
       <Text >View id: ${view_id}</Text>
+      <TextInput style={styles.input} />
     </View>
   );
 }
@@ -24,6 +25,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
   },
+  input: {
+    backgroundColor: '#DCDCDC',
+    width: 400,
+  }
 });
 
 export default App;
